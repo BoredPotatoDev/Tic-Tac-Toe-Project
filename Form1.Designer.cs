@@ -41,6 +41,11 @@ namespace Tic_Tac_Toe_Project
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.LabelX = new System.Windows.Forms.Label();
+            this.LabelO = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.new_game = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -48,7 +53,7 @@ namespace Tic_Tac_Toe_Project
             this.button1.BackColor = System.Drawing.Color.Gray;
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(44, 103);
+            this.button1.Location = new System.Drawing.Point(43, 182);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 116);
             this.button1.TabIndex = 0;
@@ -60,9 +65,9 @@ namespace Tic_Tac_Toe_Project
             this.restart.BackColor = System.Drawing.Color.Gray;
             this.restart.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.restart.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.restart.Location = new System.Drawing.Point(43, 471);
+            this.restart.Location = new System.Drawing.Point(42, 550);
             this.restart.Name = "restart";
-            this.restart.Size = new System.Drawing.Size(360, 65);
+            this.restart.Size = new System.Drawing.Size(179, 65);
             this.restart.TabIndex = 9;
             this.restart.Text = "RESTART";
             this.restart.UseVisualStyleBackColor = false;
@@ -73,7 +78,7 @@ namespace Tic_Tac_Toe_Project
             this.button2.BackColor = System.Drawing.Color.Gray;
             this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(166, 103);
+            this.button2.Location = new System.Drawing.Point(165, 182);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 116);
             this.button2.TabIndex = 11;
@@ -85,7 +90,7 @@ namespace Tic_Tac_Toe_Project
             this.button3.BackColor = System.Drawing.Color.Gray;
             this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(288, 103);
+            this.button3.Location = new System.Drawing.Point(287, 182);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(116, 116);
             this.button3.TabIndex = 12;
@@ -97,7 +102,7 @@ namespace Tic_Tac_Toe_Project
             this.button4.BackColor = System.Drawing.Color.Gray;
             this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.Location = new System.Drawing.Point(43, 225);
+            this.button4.Location = new System.Drawing.Point(42, 304);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(116, 116);
             this.button4.TabIndex = 13;
@@ -109,7 +114,7 @@ namespace Tic_Tac_Toe_Project
             this.button5.BackColor = System.Drawing.Color.Gray;
             this.button5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button5.Location = new System.Drawing.Point(166, 225);
+            this.button5.Location = new System.Drawing.Point(165, 304);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(116, 116);
             this.button5.TabIndex = 14;
@@ -121,7 +126,7 @@ namespace Tic_Tac_Toe_Project
             this.button6.BackColor = System.Drawing.Color.Gray;
             this.button6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button6.Location = new System.Drawing.Point(287, 225);
+            this.button6.Location = new System.Drawing.Point(286, 304);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(116, 116);
             this.button6.TabIndex = 15;
@@ -133,7 +138,7 @@ namespace Tic_Tac_Toe_Project
             this.button7.BackColor = System.Drawing.Color.Gray;
             this.button7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button7.Location = new System.Drawing.Point(44, 347);
+            this.button7.Location = new System.Drawing.Point(43, 426);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(116, 116);
             this.button7.TabIndex = 16;
@@ -145,7 +150,7 @@ namespace Tic_Tac_Toe_Project
             this.button8.BackColor = System.Drawing.Color.Gray;
             this.button8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button8.Location = new System.Drawing.Point(166, 347);
+            this.button8.Location = new System.Drawing.Point(165, 426);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(116, 116);
             this.button8.TabIndex = 17;
@@ -157,7 +162,7 @@ namespace Tic_Tac_Toe_Project
             this.button9.BackColor = System.Drawing.Color.Gray;
             this.button9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button9.Location = new System.Drawing.Point(288, 347);
+            this.button9.Location = new System.Drawing.Point(287, 426);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(116, 116);
             this.button9.TabIndex = 18;
@@ -175,12 +180,78 @@ namespace Tic_Tac_Toe_Project
             this.label3.TabIndex = 23;
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // LabelX
+            // 
+            this.LabelX.AutoSize = true;
+            this.LabelX.BackColor = System.Drawing.Color.Gray;
+            this.LabelX.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabelX.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LabelX.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.LabelX.Location = new System.Drawing.Point(144, 114);
+            this.LabelX.Name = "LabelX";
+            this.LabelX.Size = new System.Drawing.Size(55, 57);
+            this.LabelX.TabIndex = 24;
+            this.LabelX.Text = "0";
+            // 
+            // LabelO
+            // 
+            this.LabelO.AutoSize = true;
+            this.LabelO.BackColor = System.Drawing.Color.Gray;
+            this.LabelO.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabelO.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LabelO.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.LabelO.Location = new System.Drawing.Point(325, 114);
+            this.LabelO.Name = "LabelO";
+            this.LabelO.Size = new System.Drawing.Size(55, 57);
+            this.LabelO.TabIndex = 25;
+            this.LabelO.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(70, 114);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 55);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "X:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(242, 114);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 55);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "O:";
+            // 
+            // new_game
+            // 
+            this.new_game.BackColor = System.Drawing.Color.Gray;
+            this.new_game.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.new_game.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.new_game.Location = new System.Drawing.Point(223, 550);
+            this.new_game.Name = "new_game";
+            this.new_game.Size = new System.Drawing.Size(179, 65);
+            this.new_game.TabIndex = 28;
+            this.new_game.Text = "NEW GAME";
+            this.new_game.UseVisualStyleBackColor = false;
+            this.new_game.Click += new System.EventHandler(this.new_game_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(444, 564);
+            this.ClientSize = new System.Drawing.Size(444, 641);
+            this.Controls.Add(this.new_game);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LabelO);
+            this.Controls.Add(this.LabelX);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -215,6 +286,11 @@ namespace Tic_Tac_Toe_Project
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label LabelX;
+        private System.Windows.Forms.Label LabelO;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button new_game;
     }
 }
 

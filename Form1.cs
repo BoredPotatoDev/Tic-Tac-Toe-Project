@@ -11,6 +11,10 @@ namespace Tic_Tac_Toe_Project
         // Checks how many turns it is
         int Turn_Count = 0;
 
+        // Score for each player
+        int x_score = 0;
+        int o_score = 0;
+
         // Game over buttons cannot be pressed
         void Game_End()
         {
@@ -44,48 +48,64 @@ namespace Tic_Tac_Toe_Project
             // Conditions for X
             if (button1.Text == "X" && button2.Text == "X" && button3.Text == "X")
             {
+                x_score++;
+                LabelX.Text = Convert.ToString(x_score);
                 MessageBox.Show("X WON!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Game_End();
             }
 
             if (button1.Text == "X" && button5.Text == "X" && button9.Text == "X")
             {
+                x_score++;
+                LabelX.Text = Convert.ToString(x_score);
                 MessageBox.Show("X WON!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Game_End();
             }
 
             if (button3.Text == "X" && button5.Text == "X" && button7.Text == "X")
             {
+                x_score++;
+                LabelX.Text = Convert.ToString(x_score);
                 MessageBox.Show("X WON!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Game_End();
             }
 
             if (button1.Text == "X" && button4.Text == "X" && button7.Text == "X")
             {
+                x_score++;
+                LabelX.Text = Convert.ToString(x_score);
                 MessageBox.Show("X WON!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Game_End();
             }
 
             if (button7.Text == "X" && button8.Text == "X" && button9.Text == "X")
             {
+                x_score++;
+                LabelX.Text = Convert.ToString(x_score);
                 MessageBox.Show("X WON!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Game_End();
             }
 
             if (button3.Text == "X" && button6.Text == "X" && button9.Text == "X")
             {
+                x_score++;
+                LabelX.Text = Convert.ToString(x_score);
                 MessageBox.Show("X WON!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Game_End();
             }
 
             if (button4.Text == "X" && button5.Text == "X" && button6.Text == "X")
             {
+                x_score++;
+                LabelX.Text = Convert.ToString(x_score);
                 MessageBox.Show("X WON!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Game_End();
             }
 
             if (button2.Text == "X" && button5.Text == "X" && button8.Text == "X")
             {
+                x_score++;
+                LabelX.Text = Convert.ToString(x_score);
                 MessageBox.Show("X WON!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Game_End();
             }
@@ -93,53 +113,69 @@ namespace Tic_Tac_Toe_Project
             // Conditions for O
             if (button1.Text == "O" && button2.Text == "O" && button3.Text == "O")
             {
+                o_score++;
+                LabelO.Text = Convert.ToString(o_score);
                 MessageBox.Show("O WON!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Game_End();
             }
 
             if (button1.Text == "O" && button5.Text == "O" && button9.Text == "O")
             {
+                o_score++;
+                LabelO.Text = Convert.ToString(o_score);
                 MessageBox.Show("O WON!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Game_End();
             }
 
             if (button3.Text == "O" && button5.Text == "O" && button7.Text == "O")
             {
+                o_score++;
+                LabelO.Text = Convert.ToString(o_score);
                 MessageBox.Show("O WON!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Game_End();
             }
 
             if (button1.Text == "O" && button4.Text == "O" && button7.Text == "O")
             {
+                o_score++;
+                LabelO.Text = Convert.ToString(o_score);
                 MessageBox.Show("O WON!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Game_End();
             }
 
             if (button7.Text == "O" && button8.Text == "O" && button9.Text == "O")
             {
+                o_score++;
+                LabelO.Text = Convert.ToString(o_score);
                 MessageBox.Show("O WON!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Game_End();
             }
 
             if (button3.Text == "O" && button6.Text == "O" && button9.Text == "O")
             {
+                o_score++;
+                LabelO.Text = Convert.ToString(o_score);
                 MessageBox.Show("O WON!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Game_End();
             }
 
             if (button4.Text == "O" && button5.Text == "O" && button6.Text == "O")
             {
+                o_score++;
+                LabelO.Text = Convert.ToString(o_score);
                 MessageBox.Show("O WON!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Game_End();
             }
 
             if (button2.Text == "O" && button5.Text == "O" && button8.Text == "O")
             {
+                o_score++;
+                LabelO.Text = Convert.ToString(o_score);
                 MessageBox.Show("O WON!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Game_End();
             }
 
-            if (Turn_Count == 8)
+            if (Turn_Count == 9)
             {
                 MessageBox.Show("It's a Draw! Restart the game!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -347,7 +383,38 @@ namespace Tic_Tac_Toe_Project
             button8.Text = "";
             button9.Text = "";
 
+            Turn_Count = 1;
+        }
+
+        // New Game
+        private void new_game_Click(object sender, EventArgs e)
+        {
+            button1.Enabled = true;
+            button2.Enabled = true;
+            button3.Enabled = true;
+            button4.Enabled = true;
+            button5.Enabled = true;
+            button6.Enabled = true;
+            button7.Enabled = true;
+            button8.Enabled = true;
+            button9.Enabled = true;
+
+            button1.Text = "";
+            button2.Text = "";
+            button3.Text = "";
+            button4.Text = "";
+            button5.Text = "";
+            button6.Text = "";
+            button7.Text = "";
+            button8.Text = "";
+            button9.Text = "";
+
             Turn_Count = 0;
+            x_score = 0;
+            o_score = 0;
+
+            LabelX.Text = "0";
+            LabelO.Text = "0";
         }
     }
 }
