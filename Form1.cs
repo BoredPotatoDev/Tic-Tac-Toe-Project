@@ -8,6 +8,9 @@ namespace Tic_Tac_Toe_Project
         // Checks whether X or O turn
         Boolean Checker;
 
+        // Checks how many turns it is
+        int Turn_Count = 0;
+
         // Game over buttons cannot be pressed
         void Game_End()
         {
@@ -135,6 +138,11 @@ namespace Tic_Tac_Toe_Project
                 MessageBox.Show("O WON!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Game_End();
             }
+
+            if (Turn_Count == 8)
+            {
+                MessageBox.Show("It's a Draw! Restart the game!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
 
@@ -167,6 +175,7 @@ namespace Tic_Tac_Toe_Project
             }
             Win();
             turn();
+            Turn_Count++;
             button1.Enabled = false;
         }
 
@@ -184,6 +193,7 @@ namespace Tic_Tac_Toe_Project
             }
             Win();
             turn();
+            Turn_Count++;
             button2.Enabled = false;
         }
 
@@ -201,6 +211,7 @@ namespace Tic_Tac_Toe_Project
             }
             Win();
             turn();
+            Turn_Count++;
             button3.Enabled = false;
         }
 
@@ -218,6 +229,7 @@ namespace Tic_Tac_Toe_Project
             }
             Win();
             turn();
+            Turn_Count++;
             button4.Enabled = false;
         }
 
@@ -235,6 +247,7 @@ namespace Tic_Tac_Toe_Project
             }
             Win();
             turn();
+            Turn_Count++;
             button5.Enabled = false;
         }
 
@@ -252,6 +265,7 @@ namespace Tic_Tac_Toe_Project
             }
             Win();
             turn();
+            Turn_Count++;
             button6.Enabled = false;
         }
 
@@ -269,6 +283,7 @@ namespace Tic_Tac_Toe_Project
             }
             Win();
             turn();
+            Turn_Count++;
             button7.Enabled = false;
         }
 
@@ -286,6 +301,7 @@ namespace Tic_Tac_Toe_Project
             }
             Win();
             turn();
+            Turn_Count++;
             button8.Enabled = false;
         }
 
@@ -304,6 +320,7 @@ namespace Tic_Tac_Toe_Project
             }
             Win();
             turn();
+            Turn_Count++;
             button9.Enabled = false;
         }
 
@@ -329,6 +346,8 @@ namespace Tic_Tac_Toe_Project
             button7.Text = "";
             button8.Text = "";
             button9.Text = "";
+
+            Turn_Count = 0;
         }
     }
 }
