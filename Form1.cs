@@ -383,7 +383,7 @@ namespace Tic_Tac_Toe_Project
             button8.Text = "";
             button9.Text = "";
 
-            Turn_Count = 1;
+            Turn_Count = 0;
         }
 
         // New Game
