@@ -40,12 +40,12 @@ namespace Tic_Tac_Toe_Project
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.LabelX = new System.Windows.Forms.Label();
             this.LabelO = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.new_game = new System.Windows.Forms.Button();
+            this.TurnIndicator = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -169,17 +169,6 @@ namespace Tic_Tac_Toe_Project
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(129, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 55);
-            this.label3.TabIndex = 23;
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // LabelX
             // 
             this.LabelX.AutoSize = true;
@@ -241,18 +230,28 @@ namespace Tic_Tac_Toe_Project
             this.new_game.UseVisualStyleBackColor = false;
             this.new_game.Click += new System.EventHandler(this.new_game_Click);
             // 
+            // TurnIndicator
+            // 
+            this.TurnIndicator.AutoSize = true;
+            this.TurnIndicator.Font = new System.Drawing.Font("Arial Rounded MT Bold", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TurnIndicator.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.TurnIndicator.Location = new System.Drawing.Point(103, 18);
+            this.TurnIndicator.Name = "TurnIndicator";
+            this.TurnIndicator.Size = new System.Drawing.Size(0, 75);
+            this.TurnIndicator.TabIndex = 29;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(444, 641);
+            this.Controls.Add(this.TurnIndicator);
             this.Controls.Add(this.new_game);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LabelO);
             this.Controls.Add(this.LabelX);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -291,6 +290,7 @@ namespace Tic_Tac_Toe_Project
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button new_game;
+        private System.Windows.Forms.Label TurnIndicator;
     }
 }
 
